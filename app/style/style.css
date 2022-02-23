@@ -10,6 +10,12 @@
 body {
   font-size: 1.125rem;
   font-family: 'Barlow', sans-serif;
+  background-color: white;
+}
+
+.container-body {
+  max-width: 1440px;
+  margin: auto;
 }
 
 a {
@@ -569,6 +575,65 @@ a {
 @media (max-width: 39.9375em) {
   .testimonials__persons-container .person .info-container .job {
     font-size: 15px;
+  }
+}
+
+.image-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  height: 450px;
+  background-color: red;
+  margin-top: 150px;
+}
+
+@media (max-width: 39.9375em) {
+  .image-section {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin-top: 87px;
+  }
+}
+
+.image-section .pic:nth-child(1) {
+  background-image: url("../../images/desktop/image-gallery-milkbottles.jpg");
+}
+
+@media (max-width: 39.9375em) {
+  .image-section .pic:nth-child(1) {
+    background-image: url("../../images/mobile/image-gallery-milkbottles.jpg");
+  }
+}
+
+.image-section .pic:nth-child(2) {
+  background-image: url("../../images/desktop/image-gallery-orange.jpg");
+}
+
+@media (max-width: 39.9375em) {
+  .image-section .pic:nth-child(2) {
+    background-image: url("../../images/mobile/image-gallery-orange.jpg");
+  }
+}
+
+.image-section .pic:nth-child(3) {
+  background-image: url("../../images/desktop/image-gallery-cone.jpg");
+}
+
+@media (max-width: 39.9375em) {
+  .image-section .pic:nth-child(3) {
+    background-image: url("../../images/mobile/image-gallery-cone.jpg");
+  }
+}
+
+.image-section .pic:nth-child(4) {
+  background-image: url("../../images/desktop/image-gallery-sugarcubes.jpg");
+}
+
+@media (max-width: 39.9375em) {
+  .image-section .pic:nth-child(4) {
+    background-image: url("../../images/mobile/image-gallery-sugar-cubes.jpg");
   }
 }
 /*# sourceMappingURL=style.css.map */

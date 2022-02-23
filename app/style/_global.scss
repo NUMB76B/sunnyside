@@ -10,6 +10,12 @@
 body{
     font-size: 1.125rem;
     font-family:'Barlow', sans-serif ;
+    background-color: $white;
+   
+}
+.container-body{
+    max-width: 1440px;
+    margin: auto;
 }
 
 a{
