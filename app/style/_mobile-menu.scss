@@ -1,0 +1,69 @@
+.header{
+    .has-fade{
+        display: none;
+    }
+    .mobile-menu{
+        @include breakpoint-down("small"){
+            width: 333px;
+            height: 331px;
+            position:relative;
+            margin: auto;
+            bottom:386px;
+        }
+        
+        
+       
+        .triangle{
+            @include breakpoint-down("small"){
+                width: 100%;
+                height: 23px;
+                display: flex;
+                justify-content: end;
+            }
+
+                .top-left{
+                    @include breakpoint-down("small"){
+                        width: 0;
+                        height: 0;
+                        border-bottom: 23px solid $white;
+                        border-left: 23px solid transparent;
+                    }
+                }
+            
+            
+        }
+
+        .links{    
+            & > a{
+                margin-bottom: 30px;
+            }
+            @include breakpoint-down("small"){
+                width: 100%;
+                height: 305px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: $white;  
+            }
+
+            a{
+                @include breakpoint-down("small"){
+                    color: $darkGrayishBlue;
+
+                    &:hover{
+                        background-color: $Yellow;
+                        padding: 11px 28px;
+                        border-radius: 25px;
+                        color: black;
+                    }
+                    
+
+                }
+                
+            }
+            
+         }
+        
+    }
+}
